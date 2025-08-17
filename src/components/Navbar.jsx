@@ -21,7 +21,7 @@ const Navbar = () => {
       <div className="bg-blue-950 sticy w-full text-white min-h-17 px-6 py-3 flex justify-between items-center shadow-md">
         <div className="text-2xl font-bold font-serif"><Link to={"/"}>MyApp</Link></div>
         <ul className="flex gap-6">
-          <Link to={"/"}>
+          <Link to={"/home"}>
             <li className="hover:text-yellow-200  text-lg font-medium font-serif cursor-pointer">
               Home
             </li>

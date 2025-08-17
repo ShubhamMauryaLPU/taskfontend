@@ -7,13 +7,15 @@ import LoginPage from "./components/LoginPage";
 import UserProfile from "./components/UserProfile";
 import Register from "./pages/Register";
 import Projects from "./components/Projects";
+import Index from "./pages/Index";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Index/>} />
+        <Route path="/home" element={<Home/>} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/login" element={<LoginPage/>} />
         <Route path="/user-wrok/:id" element={<UserProfile/>} />
