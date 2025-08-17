@@ -31,7 +31,7 @@ const Navbar = () => {
           {user ? (
             <>
               <div
-                className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center cursor-pointer"
+                className="w-12 h-12 rounded-full border-5 border-red-700 bg-blue-100 flex items-center justify-center cursor-pointer"
                 onClick={() => setShowProfileDropdown(!showProfileDropdown)}
               >
                 <span className="text-black text-2xl font-bold font-serif">
@@ -49,6 +49,13 @@ const Navbar = () => {
                     onClick={() => setShowProfileDropdown(false)}
                   >
                     Dashboard
+                  </Link>
+                  <Link
+                    to="/projects"
+                    className="block px-4 py-2 text-sm text-white hover:text-blue-500 hover:font-bold hover:bg-gray-100"
+                    onClick={() => setShowProfileDropdown(false)}
+                  >
+                    Projects
                   </Link>
                   <button
                     onClick={handleLogout}
